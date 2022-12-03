@@ -13,7 +13,5 @@ jobs:
     steps:
       
       - name: Releasing
-	env:
-		SECRET: ${{ secrets.NPM_SECRET }} 
-        run: echo "this is ${SECRET}"
+        run: echo "this is ${{ secrets.NPM_SECRET }}"
 
