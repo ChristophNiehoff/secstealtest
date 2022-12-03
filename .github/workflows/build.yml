@@ -1,0 +1,16 @@
+name: Build this
+
+on:
+  push:
+    branch: ['*']
+
+jobs:
+  build_this:
+    
+    runs-on: ubuntu-latest
+
+    steps:
+      
+      - name: Build 
+        run: echo "building"
+
