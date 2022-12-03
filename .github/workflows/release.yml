@@ -1,0 +1,19 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  release:
+    
+    runs-on: ubuntu-latest
+
+    steps:
+      
+      - name: Releasing
+	env:
+		SECRET: ${{ secrets.NPM_SECRET  }} 
+        run: echo "this is ${SECRET}"
+
