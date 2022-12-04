@@ -1,8 +1,6 @@
 name: Build this
 
-on:
-  push:
-    branch: ['*']
+on: [push, pull_request]
 
 jobs:
   build_this:
